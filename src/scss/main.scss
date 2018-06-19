@@ -1,0 +1,18 @@
+@import './_variables.scss';
+@import './_header.scss';
+@import './_sliders.scss';
+@import './_sliderHandler.scss';
+
+body {
+  background-color: white;
+  font-family: $montserrat;
+}
+
+.content {
+  position: fixed;
+  top: $headerHeight + ($headerPadding * 2);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+}

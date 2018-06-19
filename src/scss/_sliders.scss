@@ -1,0 +1,26 @@
+$slidesCount: 4;
+.slider {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  overflow-x: hidden;
+  .slides-container {
+    height: 50%;
+    width: 100% * $slidesCount;
+    position: relative;
+    transition: margin-left 1s ease-out;
+
+    .slide {
+      height: 100%;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      padding: $defaultPadding;
+      @for $i from 0 to $slidesCount  {
+        &:nth-child(#{$i + 1}) {
+          left: 100vw * $i;
+        }
+      }
+    }
+  }
+}

@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 
 class Content extends Component {
-    state = {
-        pageSeleceted: 1
-    };
-    
     componentDidMount() {
         this.showSlide(this.props.defaultPage);
     }
@@ -14,13 +10,11 @@ class Content extends Component {
         this.showSlide(newProps.defaultPage);
     }
     
-    showSlide = async (n) => {
-        await this.setState({slideSelected: n});
+    showSlide = (n) => {
         this.slider.style.marginLeft = '-' + (100 * (n-1)) + '%';
     };
     
     render() {
-        let slideSelected = this.props.slideSelected;
         return <div className="content">
             <div className="slider">
                 <div className="slides-container" ref={el => this.slider = el}>

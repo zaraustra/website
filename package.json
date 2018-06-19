@@ -1,8 +1,7 @@
 {
-  "name": "zaraustra.github.io",
+  "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zaraustra.github.io",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -14,12 +13,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass": "node-sass-chokidar ./src/scss -o ./src --watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "sass": "node-sass-chokidar ./src/scss -o ./src --watch"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0",
     "node-sass-chokidar": "^1.3.0"
   }
 }

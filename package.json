@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "sass": "node-sass-chokidar ./src/scss -o ./src --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",

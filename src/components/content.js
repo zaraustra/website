@@ -47,10 +47,6 @@ class Content extends Component {
                 <NavLink activeClassName='active' to='/about-me'>About Me</NavLink>
                 <NavLink activeClassName='active' to='/portfolio'>Portfolio</NavLink>
                 <NavLink activeClassName='active' to='/contacts'>Contacts</NavLink>
-                {/*<div className={slideSelected === 1 ? ' active' : ''} onClick={this.showSlide.bind(this, 1)}>Home</div>*/}
-                {/*<div className={slideSelected === 2 ? ' active' : ''} onClick={this.showSlide.bind(this, 2)}>About me</div>*/}
-                {/*<div className={slideSelected === 3 ? ' active' : ''} onClick={this.showSlide.bind(this, 3)}>Portfolio</div>*/}
-                {/*<div className={slideSelected === 4 ? ' active' : ''} onClick={this.showSlide.bind(this, 4)}>Contacts</div>*/}
             </div>
         </div>
     }

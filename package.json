@@ -1,8 +1,8 @@
 {
-  "name": "website",
+  "name": "zaraustra.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lorenzogiulioni.com",
+  "homepage": "https://zaraustra.github.io",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "sass": "node-sass-chokidar ./src/scss -o ./src --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",

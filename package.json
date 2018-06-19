@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "zaraustra.github.org/website",
+  "homepage": "https://zaraustra.github.io/website/",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

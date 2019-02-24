@@ -3,7 +3,10 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  height: $headerHeight;
-  background-color: yellow;
-  padding: $headerPadding;
+  padding: $defaultPadding;
+  background-color: $primary;
+  box-shadow: $lowShadow;
+  h3 {
+    margin: 0;
+  }
 }

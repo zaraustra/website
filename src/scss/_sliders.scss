@@ -2,13 +2,12 @@ $slidesCount: 4;
 .slider {
   height: 100%;
   width: 100%;
-  background-color: red;
   overflow-x: hidden;
   .slides-container {
     height: 50%;
     width: 100% * $slidesCount;
     position: relative;
-    transition: margin-left 1s ease-out;
+    transition: margin-left .2s;
 
     .slide {
       height: 100%;

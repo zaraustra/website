@@ -3,20 +3,29 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  height: 50px;
-  background-color: yellow;
-  padding: 15px; }
+  padding: 15px;
+  background-color: #F2A034;
+  box-shadow: 0 2px 2px #CCC; }
+  header h3 {
+    margin: 0; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px;
+  background-color: #CCC; }
 
 .slider {
   height: 100%;
   width: 100%;
-  background-color: red;
   overflow-x: hidden; }
   .slider .slides-container {
     height: 50%;
     width: 400%;
     position: relative;
-    transition: margin-left 1s ease-out; }
+    transition: margin-left .2s; }
     .slider .slides-container .slide {
       height: 100%;
       width: 100vw;
@@ -34,24 +43,31 @@ header {
 
 .slider-handler {
   position: fixed;
-  top: 100px;
+  top: 113px;
   right: 25%;
   left: 25%;
-  background-color: cyan;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px #CCC; }
   .slider-handler a {
     flex: 1;
     text-align: center;
     padding: 15px;
     cursor: pointer;
-    text-decoration: none; }
+    text-decoration: none;
+    color: black;
+    border: 0; }
+    .slider-handler a:first-child {
+      border-radius: 3px 0 0 3px; }
+    .slider-handler a:last-child {
+      border-radius: 0 3px 3px 0; }
     .slider-handler a:hover {
       font-weight: bold;
-      background-color: deeppink; }
+      background-color: #A4BD57; }
     .slider-handler a.active {
       font-weight: bold;
-      background-color: green; }
+      background-color: #F2A034; }
 
 body {
   background-color: white;
@@ -59,8 +75,13 @@ body {
 
 .content {
   position: fixed;
-  top: 80px;
+  top: 63px;
   right: 0;
   left: 0;
-  bottom: 0;
-  background-color: blue; }
+  bottom: 0; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: black; }
